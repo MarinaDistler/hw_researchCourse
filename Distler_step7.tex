@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+\usepackage[russian, english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[unicode, pdftex]{hyperref}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{graphicx}
+\usepackage[unicode, pdftex]{hyperref}
+\usepackage{a4wide}
+
+\title{Преобразование прозы в стихотворную форму с помощью методов обработки текста}
+%\author{not specified, not necessary here}
+\date{}
+\begin{document}
+\maketitle
+Примечание: к сожалению, у меня не получилось договорится о выполнении проекта о котором я писала в предыдущем домашнем задании, в итоге я выбрала проект по теме "Преобразование прозы в стихотворную форму с помощью методов обработки текста".
+
+Разработать модель для преобразования прозы в стихотворную форму. Изучить существующие методы и проверить их эффективность для русского языка. Предложить и разработать улучшения для наилучшего метода.
+
+
+
+\section{Introduction}
+В таблице~\ref{tab:intro_comparative} описаны уже существующие решения для генерации стихов по прозаическому тексту. 
+
+\begin{table}[!htbp]
+\label{tab:intro_comparative}
+\caption{Сравнительный анализ решений преобразования прозы в стихотворную форму.}
+\begin{tabular}{p{5cm}|p{5cm}|p{5cm}}
+	Solution & Strengths & Weakness \\
+	\hline
+	Automatic Poetry Generation from Prosaic Text~\cite{van-de-cruys-2020-automatic} & 
+        Решает именно ту задачу, что мне нужна
+        
+        Не требует стихов для обучения
+        &
+	Не работает для русского языка 
+        
+        Уже несколько устарела (использует RNN)\\
+        \hline
+        System Supporting Poetry Generation Using Text Generation and Style Transfer Methods~\cite{styletranferBadura} &
+        Использует трансформер-архитектуру
+        
+        Предлагает метрики оценивания сгенерированных стихов &
+        Генерирует стих по первой строке, а не переводит прозу в стихотворную форму
+        
+        Не работает для русского языка\\
+        \hline
+        Zero-shot Sonnet Generation with Discourse-level Planning and Aesthetics Features~\cite{Zero-shot-Sonnet-Generation} &
+        Не использует стихи для обучения
+        
+        Предлагает способ увеличить креативность модели 
+        
+        Предлагает автоматические метрики оценивания качества&
+        
+        Генерирует стих, а не переводит прозу в стихотворную форму
+        
+        Не работает для русского языка
+\end{tabular} 
+\end{table}
+ 
+ The section references contain the full list, collected for this project. 
+\nocite{*} % Remove this to keep the cited referernces only
+
+\bibliographystyle{unsrt}
+\bibliography{Distler-Step-7}
+\end{document}
