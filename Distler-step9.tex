@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+\usepackage[russian, english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[unicode, pdftex]{hyperref}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{graphicx}
+\usepackage[unicode, pdftex]{hyperref}
+\usepackage{a4wide}
+
+\begin{document}
+
+\paragraph{Title:} Преобразование прозы в стихотворную форму с помощью методов обработки текста
+
+\paragraph{Abstract:} 
+Разработать модель для преобразования прозы в стихотворную форму. Изучить существующие методы и проверить их эффективность для русского языка. Предложить и разработать улучшения для наилучшего метода.
+
+\paragraph{Datasets:} 
+\begin{enumerate}
+\item Поэтический корпус русского языка по \href{https://github.com/IlyaGusev/PoetryCorpus}{ссылке}.
+\item Датасет размеченных английских стихов по \href{https://github.com/potamides/uniformers?tab=readme-ov-file}{ссылке} из статьи~\cite{belouadi-eger-2023-bygpt5}
+\item Poetry Foundation Poems, датасет стихов с \href{https://www.poetryfoundation.org/}{сайта} по  \href{https://www.kaggle.com/datasets/tgdivy/poetry-foundation-poems}{ссылка}. 
+\end{enumerate}
+
+\paragraph{References:}  Papers with a fast intro and the basic solution to compare.
+\begin{enumerate}
+\item Формулировка проблемы преобразования текста в стихи, однако только для Персидского~\cite{Prose2PoemPersian}.
+\item Базовый алгоритм - LLM-based multi-agent poetry generation in non-cooperative environments ~\cite{zhang2024llmbasedmultiagentpoetrygeneration}.
+\end{enumerate}
+
+\paragraph{Basic solution:} \href{https://github.com/zhangr2021/Multiagent_poetry}{Ссылка} на код базового алгоритма из статьи~\cite{zhang2024llmbasedmultiagentpoetrygeneration}. 
+
+\paragraph{Authors:} М. Дистлер, В. Малых
+
+
+\bibliographystyle{unsrt}
+\bibliography{Name-theArt}
+\end{document}
